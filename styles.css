@@ -1,0 +1,360 @@
+:root{
+    --firstcolor:#ffd000;
+    --primarycolor:#dbcb6c;
+    --secondarycolor:rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.main-nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo img{
+    width: 60px;
+    margin-left: 2rem;
+}
+.nav__bar li{
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+.nav__bar li a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+main{
+    font-size: 1.6rem;
+}
+.body__home{
+    width: 100%;
+    background-image: url(./Imagenes/_DSC4339.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+article{
+    width: 95%;
+    margin: 0 auto;
+}
+.first__article{
+    color: #fff;
+    padding-top: 2rem;
+}
+.first__article h1{
+    font-size: 8rem;
+    letter-spacing: .7rem;
+    text-align: center;
+    font-family: 'morganite', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+.first__article h2{
+    text-align: justify;
+    padding-top: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+.videos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+.videos h4{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1rem;
+}
+.videos video{
+    width: 95%;
+}
+.videosprod{
+    display: inherit;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.buttons input{
+    width: 200px;
+    height: 50px;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    color: #000;
+    background-color: var(--firstcolor) ;
+    border: none;
+    border-radius: 5px;
+}
+.buttons input:active{
+    background-color: var(--primarycolor);
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+/* ----------------------------------*/
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2rem 1rem;
+}
+footer{
+    font-size: 1.5rem;
+}
+.footer__article p{
+    padding-top: 2rem;
+    text-align: justify;
+    text-align: center;
+}
+.footer__article h3{
+    letter-spacing: .5rem;
+}
+.ig img{
+    width: 100%;
+}
+.nav__icons img{
+    filter: invert(0.61) sepia(1) hue-rotate(20deg) saturate(1000%);
+}
+.nav__icons{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav__icons li{
+    width: 30px;
+    display: inline-block;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+/*------------------------------------------------------------------ABOUT SECTION*/
+.main__body-about{
+    background-image: url(./Imagenes/ciudad.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    text-align: justify;
+}
+.main__about{
+    max-width: 1000px;
+    margin: auto;
+}
+.first__section-about h2{
+    padding: 2rem 0;
+    font-size: 8rem;
+    letter-spacing: .5rem;
+    font-family: 'morganite', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tittle__opinions{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'morganite', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+article p{
+    line-height: 2rem;
+    font-weight: lighter;
+}
+.team__images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.team__images a img{
+    width: 150px;
+}
+.opinions{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+}
+.profile{
+    display: flex;
+    margin-top: 2rem;
+}
+.profile img{
+    width: 100px;
+    border-radius: 50%;
+    place-self: center;
+}
+.profile h4{
+    margin-top: .5rem;
+    color: #ffbb00;
+    font-family: 'morganite', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+.profile article{
+    padding: 1rem;
+}
+
+@media (max-width: 2500px) {
+    .profile{
+        width: 50%;
+    }
+    .main__body-about{
+        height: 100vh;
+    }
+}
+@media (max-width: 1024px) {
+    .profile{
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .profile{
+        width: 300px;
+    }
+    .main__body-about{
+        height: 100%;
+    }
+}
+
+/*------------------------------------------------VIDEOCLIPS*/
+
+.main__videoclips{
+    background-image: url(./Imagenes/obelisco.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.videoclips h1{
+    font-family: morganite;
+    font-size: 6rem;
+}
+.main__videoclips-body{
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 2rem;
+    height: 100%;
+}
+.videoclips{
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+.containter__videos video{
+    max-width: 50%;
+    margin-top: 2rem;
+}
+.containter__videos{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+.containter__videos video{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .containter__videos video{
+        max-width: 1000px;
+    }
+}
+/*---------------------------------------BODY CONTACT*/
+
+.body__contact{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main__contact{
+    width: 100%;
+    height: 100vh;
+}
+.backgroundvideo video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+.rigth{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    margin-top: 10%;
+    position: absolute;
+    z-index: 5;
+}
+.form__contact{
+    background-color: #ffbb007c;
+    max-width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: #000 0 0 30px;
+}
+.form__contact input{
+    width: 100%;
+    height: 35px;
+    border:  none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.form__contact textarea{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.form__contact h4{
+    color: #fff;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: morganite;
+}
+.form__contact button{
+    width: 180px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: .2rem;
+    background-color: #000;
+    color: #fff;
+}
+.form__contact button:active{
+    background-color: rgb(58, 55, 55);
+    color: #ffbb00;
+}
+.form__contact button:hover{
+    width: 190px;
+}

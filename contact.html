@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css">
+    <link href="./Logo/Logo filmlatino.png" type="image/png" rel="icon">
+    <link rel="stylesheet" href="./fonts/Morganite-Black.ttf">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <figure class="nav__logo">
+                <a href="./index.html">
+                    <img src="./Logo/Logo filmlatino.png" alt="" width="150px">
+                </a>
+            </figure>
+            <ul class="nav__bar">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./videoclips.html">Films</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="body__contact">
+            <section class="main__contact">
+                <section class="rigth">
+                    <form id="form" class="form__contact" action="https://formspree.io/f/mjvlanry"
+                    method="POST">
+                        <h4>A GRABAR</h4>
+                        <label for="name"><span>Nombre</span></label>
+                        <input type="name" required type="text" id="name">
+                        <label for="email"><span>Email</span></label>
+                        <input type="email" required type="email" id="email">
+                        <label for="number"><span>Celular</span></label>
+                        <input type="number" required type="number" id="number">
+                        <label for="message"><span>Mensaje</span></label>
+                        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                        <button type="submit" class="btn primary full" id="submit">ENVIAR</button>
+                    </form>
+                </section>
+                <section class="backgroundvideo">
+                    <video src="./Videos/INTRO Filmlatino 1080.mp4" muted autoplay loop>
+                    </video>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="footer__contact">
+            <article class="footer__article">
+                <h3>SIGUENOS</h3>
+                <section class="footer__nav">
+                    <nav class="icons__nav">
+                        <ul class="nav__icons">
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCCWSv7uv3lEbYiFPm6cZjEw">
+                                    <img class="youtube__logo" src="./icons/youtube-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Filmlatino_">
+                                    <img src="./icons/twitter-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/FilmlatinoArg">
+                                    <img src="./icons/facebook-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/75066965">
+                                    <img src="./icons/linkedin-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/film_latino/?hl=es">
+                                    <img src="./icons/instagram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <p>Algo no funciona en la pagina? contactanos en contact@filmlatino.com</p>
+            </article>
+        </section>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
